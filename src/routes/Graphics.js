@@ -66,7 +66,7 @@ class Graphics extends Component {
 
     render() {
         return (
-            <div className="row">
+            <div className="row wrapper">
                 <Header/>
                 <h4>Graphics</h4>
                 <p>The best sites to get free stock Graphic</p>

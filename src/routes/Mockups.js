@@ -35,9 +35,9 @@ class Mockups extends Component {
             },
             {
                 id: 5,
-                title: "http://p-px.com/",
+                title: "Perfect Pixels",
                 description: "Great place to get breathtaking Free Pictures for business or personal projects",
-                uri: "https://kaboompics.com/",
+                uri: "http://p-px.com/",
                 imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_perfect_pixels-100x100.gif"
             },
             {
@@ -94,7 +94,7 @@ class Mockups extends Component {
 
     render() {
         return (
-            <div className="row">
+            <div className="row wrapper">
                 <Header/>
                 <h4>Mockups</h4>
                 <p>The best sites to get free stock mockups</p>

@@ -4,7 +4,20 @@
 .responsive-img{
     margin: 10px 20px 10px 0;
 }
-
 a {
     color: black;
+}
+a:hover{
+    color: darkslategrey;
+    text-decoration: none;
+}
+h1 a:active {
+    color: black;
+}
+h1 {
+    font-size: 80px;
+    font-weight: bolder;
+}
+.wrapper {
+    padding: 40px 40px;
 }

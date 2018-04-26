@@ -73,10 +73,10 @@ class Photography extends Component {
 
     renderData() {
         return this.getData().map(({id, title, description, uri, imageUri}) => (
-            <li className="collection-item" key={id}>
+            <li className="list-group-item" key={id}>
                 <a href={uri} target="_blank">
                     <div className="valign-wrapper">
-                        <img src={imageUri} alt="" className="circle responsive-img"/>
+                        <img src={imageUri} alt={title} className="circle responsive-img"/>
                         <h5>{title}</h5>
                     </div>
                     <p>{description}</p>
@@ -87,11 +87,11 @@ class Photography extends Component {
 
     render() {
         return (
-            <div className="row">
+            <div className="row wrapper">
                 <Header/>
                 <h4>Photography</h4>
                 <p>The best sites to get free stock photography</p>
-                <ul className="collection">
+                <ul className="list-group">
                     {this.renderData()}
                 </ul>
                 <Footer/>

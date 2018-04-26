@@ -5,7 +5,7 @@ import Data from "../data/data";
 class CardsList extends Component{
     renderData = () => {
         return Data.map(({id, title, path, icon}) => (
-            <div className="col s4">
+            <div className="animated fadeInUp col-md-4">
                 <Link to={path}>
                     <div className="card blue-grey darken-2">
                         <div className="card-content white-text center-align">
