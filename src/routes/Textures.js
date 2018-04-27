@@ -7,66 +7,59 @@ class Textures extends Component {
         return [
             {
                 id: 1,
-                title: "Pixabay",
-                description: "Over 410000 high quality photos, illustrations, and vector graphics. Free for commercial use. No attribution required.",
-                uri: "https://pixabay.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_pixabay-100x100.gif"
+                title: "Subtle Patterns",
+                description: "Free textures for your next web project",
+                uri: "http://subtlepatterns.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_subtle_patterns-100x100.gif"
             },
             {
                 id: 2,
-                title: "Pexels",
-                description: "Free high quality photos you can use everywhere. Free for commercial use. No attribution required.",
-                uri: "https://www.pexels.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_pexels_02-100x100.gif"
+                title: "Textures",
+                description: "Free textures for 3d modeling, texturing, photoshop and game development. All images are free for personal and commercial use.",
+                uri: "http://texturer.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_texturer-100x100.gif"
             },
             {
                 id: 3,
-                title: "StockSnap",
-                description: "High quality and high resolution images free from all copyright restrictions – no attribution required.",
-                uri: "https://stocksnap.io/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_stocksnap-100x100.gif"
+                title: "Pattern Library",
+                description: "Patterns shared by the most talented designers out there for you to use freely in your designs.",
+                uri: "http://thepatternlibrary.com/?makerbook",
+                imageUri: "http://makerbook.net/wp-content/uploads/2015/05/makerbook_thumbnail_patern_library-100x100.png"
             },
             {
                 id: 4,
-                title: "Unsplash",
+                title: "Texture King",
                 description: "Free (do whatever you want) high-resolution stock photos. Download 10 new free stock photos every 10 days.",
-                uri: "https://unsplash.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_unsplash-100x100.gif"
+                uri: "http://www.textureking.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_texture_king-100x100.gif"
             },
             {
                 id: 5,
-                title: "Kaboompics",
+                title: "Transparent Textures",
                 description: "Great place to get breathtaking Free Pictures for business or personal projects",
-                uri: "https://kaboompics.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/2016/03/makerbook_thumbnail_kaboompics-100x100.png"
+                uri: "http://www.transparenttextures.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_trans_textures1-100x100.gif"
             },
             {
                 id: 6,
-                title: "Gratisography",
+                title: "Freebies Gallery",
                 description: "Free high-resolution pictures for personal and commercial projects.",
-                uri: "https://gratisography.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_gratisography-100x100.gif"
+                uri: "http://www.freebiesgallery.com/backgrounds/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_freebies_gallery-100x100.gif"
             },
             {
                 id: 7,
-                title: "ISO Republic",
+                title: "Patternico",
                 description: "High-quality, free photos for creatives",
-                uri: "https://isorepublic.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_ISO-100x100.gif"
+                uri: "http://patternico.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_patternico-100x100.gif"
             },
             {
                 id: 8,
-                title: "Pic Jumbo",
-                description: "Totally free photos for your commercial and personal works",
-                uri: "https://picjumbo.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnails_pic_jumbo-100x100.gif"
-            },
-            {
-                id: 9,
-                title: "Negative Space",
-                description: "Brilliant selection of completely free HD stock photography",
-                uri: "https://negativespace.co/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_negative_space-100x100.gif"
+                title: "Pixeden",
+                description: "Free graphic and web backgrounds to make your design project stands out with great style.",
+                uri: "http://www.pixeden.com/graphic-web-backgrounds",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_pixeden-100x100.gif"
             },
         ]
     }
@@ -77,9 +70,9 @@ class Textures extends Component {
                 <a href={uri} target="_blank">
                     <div className="valign-wrapper">
                         <img src={imageUri} alt="" className="circle responsive-img"/>
-                        <h5>{title}</h5>
+                        <h3>{title}</h3>
                     </div>
-                    <p>{description}</p>
+                    <p className="lead">{description}</p>
                 </a>
             </li>
         ))
@@ -92,7 +85,7 @@ class Textures extends Component {
                 <div className="container body-wrapper">
                     <h4>Textures</h4>
                     <p>The best sites to get free stock textures</p>
-                    <ul className="collection">
+                    <ul className="collection z-depth-3">
                         {this.renderData()}
                     </ul>
                 </div>

@@ -7,67 +7,46 @@ class Colours extends Component {
         return [
             {
                 id: 1,
-                title: "Pixabay",
+                title: "Adobe Color CC",
                 description: "Over 410000 high quality photos, illustrations, and vector graphics. Free for commercial use. No attribution required.",
-                uri: "https://pixabay.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_pixabay-100x100.gif"
+                uri: "https://color.adobe.com/explore/most-popular/?time=all",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_adobe-100x100.gif"
             },
             {
                 id: 2,
-                title: "Pexels",
+                title: "Colourlovers",
                 description: "Free high quality photos you can use everywhere. Free for commercial use. No attribution required.",
-                uri: "https://www.pexels.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_pexels_02-100x100.gif"
+                uri: "http://www.colourlovers.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_colour_lovers-100x100.gif"
             },
             {
                 id: 3,
-                title: "StockSnap",
+                title: "Coolors",
                 description: "High quality and high resolution images free from all copyright restrictions – no attribution required.",
-                uri: "https://stocksnap.io/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_stocksnap-100x100.gif"
+                uri: "http://coolors.co/browser",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_coolors-100x100.gif"
             },
             {
                 id: 4,
-                title: "Unsplash",
+                title: "Material Palette",
                 description: "Free (do whatever you want) high-resolution stock photos. Download 10 new free stock photos every 10 days.",
-                uri: "https://unsplash.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_unsplash-100x100.gif"
+                uri: "http://design-seeds.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_material_pallette-100x100.gif"
             },
             {
                 id: 5,
-                title: "Kaboompics",
+                title: "Design Seeds",
                 description: "Great place to get breathtaking Free Pictures for business or personal projects",
-                uri: "https://kaboompics.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/2016/03/makerbook_thumbnail_kaboompics-100x100.png"
+                uri: "http://design-seeds.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_design_seeds-100x100.gif"
             },
             {
                 id: 6,
-                title: "Gratisography",
+                title: "Pictaculous",
                 description: "Free high-resolution pictures for personal and commercial projects.",
-                uri: "https://gratisography.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_gratisography-100x100.gif"
-            },
-            {
-                id: 7,
-                title: "ISO Republic",
-                description: "High-quality, free photos for creatives",
-                uri: "https://isorepublic.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_ISO-100x100.gif"
-            },
-            {
-                id: 8,
-                title: "Pic Jumbo",
-                description: "Totally free photos for your commercial and personal works",
-                uri: "https://picjumbo.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnails_pic_jumbo-100x100.gif"
-            },
-            {
-                id: 9,
-                title: "Negative Space",
-                description: "Brilliant selection of completely free HD stock photography",
-                uri: "https://negativespace.co/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_negative_space-100x100.gif"
-            },
+                uri: "http://www.pictaculous.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_pictaculous-100x100.gif"
+            }
         ]
     }
 
@@ -77,9 +56,9 @@ class Colours extends Component {
                 <a href={uri} target="_blank">
                     <div className="valign-wrapper">
                         <img src={imageUri} alt="" className="circle responsive-img"/>
-                        <h5>{title}</h5>
+                        <h3>{title}</h3>
                     </div>
-                    <p>{description}</p>
+                    <p className="lead">{description}</p>
                 </a>
             </li>
         ))
@@ -92,7 +71,7 @@ class Colours extends Component {
                 <div className="container body-wrapper">
                     <h4>Colour</h4>
                     <p>The best sites to get free stock colours</p>
-                    <ul className="collection">
+                    <ul className="collection z-depth-3">
                         {this.renderData()}
                     </ul>
                 </div>

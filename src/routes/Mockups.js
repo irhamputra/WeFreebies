@@ -86,7 +86,7 @@ class Mockups extends Component {
                         <img src={imageUri} alt="" className="circle responsive-img"/>
                         <h3>{title}</h3>
                     </div>
-                    <p>{description}</p>
+                    <p className="lead">{description}</p>
                 </a>
             </li>
         ))

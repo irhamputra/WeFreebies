@@ -76,8 +76,8 @@ class Audio extends Component {
             <li className="collection-item" key={id}>
                 <a href={uri} target="_blank">
                     <div className="valign-wrapper">
-                        <img src={imageUri} alt="" className="circle responsive-img"/>
-                        <h5>{title}</h5>
+                        <img src={imageUri} alt={title} className="circle responsive-img"/>
+                        <h3>{title}</h3>
                     </div>
                     <p>{description}</p>
                 </a>
@@ -92,7 +92,7 @@ class Audio extends Component {
                 <div className="container body-wrapper">
                     <h4>Audio</h4>
                     <p>The best sites to get free stock Audio</p>
-                    <ul className="collection">
+                    <ul className="collection z-depth-3">
                         {this.renderData()}
                     </ul>
                 </div>

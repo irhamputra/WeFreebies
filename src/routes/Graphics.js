@@ -8,43 +8,43 @@ class Graphics extends Component {
             {
                 id: 1,
                 title: "Vector Me",
-                description: "Over 410000 high quality photos, illustrations, and vector graphics. Free for commercial use. No attribution required.",
-                uri: "https://pixabay.com/",
+                description: "Vector.me features an extensive database of free vector graphics. It enables you to quickly find the vector files you need by browsing or search through the entire collection of more than 150,000 vectors.",
+                uri: "http://vector.me/",
                 imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_vectorme-100x100.gif"
             },
             {
                 id: 2,
                 title: "Retro Vectors",
-                description: "Free high quality photos you can use everywhere. Free for commercial use. No attribution required.",
-                uri: "https://www.pexels.com/",
+                description: "Retro Vectors is a source of premium quality vintage vector stock files that are free for personal and commercial use. Victorian, 40’s, 50’s.",
+                uri: "http://retrovectors.com/",
                 imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_retro_vectors-100x100.gif"
             },
             {
                 id: 3,
                 title: "QVectors",
-                description: "High quality and high resolution images free from all copyright restrictions – no attribution required.",
-                uri: "https://stocksnap.io/",
+                description: "Qvectors.net is the place to find free Vector graphics, vector icons, vector backgrounds and more.",
+                uri: "http://qvectors.net/",
                 imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_qvectors-100x100.gif"
             },
             {
                 id: 4,
                 title: "Vector Portal",
-                description: "Free (do whatever you want) high-resolution stock photos. Download 10 new free stock photos every 10 days.",
-                uri: "https://unsplash.com/",
+                description: "Free stock vectors which designers can use in commercial projects.",
+                uri: "http://www.vectorportal.com/",
                 imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_vector_portal-100x100.gif"
             },
             {
                 id: 5,
                 title: "Vecteezy",
-                description: "Great place to get breathtaking Free Pictures for business or personal projects",
-                uri: "https://kaboompics.com/",
+                description: "Free Vector Art – Vecteezy is a HUGE collection of free vector art, vector graphics, illustrator brushes, Vector Wallpaper Backgrounds, Silhouettes and more!",
+                uri: "http://www.vecteezy.com/",
                 imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_vecteezy_portal-100x100.gif"
             },
             {
                 id: 6,
                 title: "Freepik",
-                description: "Free high-resolution pictures for personal and commercial projects.",
-                uri: "https://gratisography.com/",
+                description: "Freepik helps you to find free vector art, icons illustrations, PSD and photos for using in websites, magazines banners, presentations …",
+                uri: "https://www.freepik.com/",
                 imageUri: "http://makerbook.net/wp-content/uploads/2015/05/makerbook_thumbnail_freepik-100x100.png"
             }
         ]
@@ -58,7 +58,7 @@ class Graphics extends Component {
                         <img src={imageUri} alt="" className="circle responsive-img"/>
                         <h3>{title}</h3>
                     </div>
-                    <p>{description}</p>
+                    <p className="lead">{description}</p>
                 </a>
             </li>
         ))

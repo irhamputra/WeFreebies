@@ -77,9 +77,9 @@ class Video extends Component {
                 <a href={uri} target="_blank">
                     <div className="valign-wrapper">
                         <img src={imageUri} alt="" className="circle responsive-img"/>
-                        <h5>{title}</h5>
+                        <h3>{title}</h3>
                     </div>
-                    <p>{description}</p>
+                    <p className="lead">{description}</p>
                 </a>
             </li>
         ))
@@ -92,7 +92,7 @@ class Video extends Component {
                 <div className="body-wrapper container">
                     <h4>Video</h4>
                     <p>The best sites to get free stock video</p>
-                    <ul className="collection">
+                    <ul className="collection z-depth-3">
                         {this.renderData()}
                     </ul>
                 </div>

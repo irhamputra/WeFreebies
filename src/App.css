@@ -41,14 +41,14 @@ h1 {
 }
 .spacing {
     letter-spacing: .1em;
-    text-transform: uppercase;
     font-weight: bold;
 }
 li a {
     color: black;
 }
 li a:hover{
-    color: #ffb700;
+    color: black;
+    text-decoration: underline;
 }
 .collection{
     border-radius: 7px;

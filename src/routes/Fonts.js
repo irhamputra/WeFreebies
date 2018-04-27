@@ -7,67 +7,39 @@ class Fonts extends Component {
         return [
             {
                 id: 1,
-                title: "Pixabay",
-                description: "Over 410000 high quality photos, illustrations, and vector graphics. Free for commercial use. No attribution required.",
-                uri: "https://pixabay.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_pixabay-100x100.gif"
+                title: "Google Fonts",
+                description: "Hundreds of free, open-source fonts optimized for the web. Just 3 quick steps between you and a good lookin’ website.",
+                uri: "http://google.com/fonts",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_font_google-100x100.gif"
             },
             {
                 id: 2,
-                title: "Pexels",
-                description: "Free high quality photos you can use everywhere. Free for commercial use. No attribution required.",
-                uri: "https://www.pexels.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_pexels_02-100x100.gif"
+                title: "Font Squirrel",
+                description: "Font Squirrel scours the internet in search of free, highest-quality, designer-",
+                uri: "http://www.fontsquirrel.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_font_squirrel-100x100.gif"
             },
             {
                 id: 3,
-                title: "StockSnap",
-                description: "High quality and high resolution images free from all copyright restrictions – no attribution required.",
-                uri: "https://stocksnap.io/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_stocksnap-100x100.gif"
+                title: "DaFont",
+                description: "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity.",
+                uri: "https://dafont.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_dafont-100x100.gif"
             },
             {
                 id: 4,
-                title: "Unsplash",
-                description: "Free (do whatever you want) high-resolution stock photos. Download 10 new free stock photos every 10 days.",
-                uri: "https://unsplash.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_unsplash-100x100.gif"
+                title: "Abstract Fonts",
+                description: "Archive of freely downloadable fonts and dingbats. Organised alphabetically, by category, by author or by popularity. Includes discussion forum.",
+                uri: "http://abstractfonts.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_abstractfonts-100x100.gif"
             },
             {
                 id: 5,
-                title: "Kaboompics",
-                description: "Great place to get breathtaking Free Pictures for business or personal projects",
-                uri: "https://kaboompics.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/2016/03/makerbook_thumbnail_kaboompics-100x100.png"
-            },
-            {
-                id: 6,
-                title: "Gratisography",
-                description: "Free high-resolution pictures for personal and commercial projects.",
-                uri: "https://gratisography.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_gratisography-100x100.gif"
-            },
-            {
-                id: 7,
-                title: "ISO Republic",
-                description: "High-quality, free photos for creatives",
-                uri: "https://isorepublic.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_ISO-100x100.gif"
-            },
-            {
-                id: 8,
-                title: "Pic Jumbo",
-                description: "Totally free photos for your commercial and personal works",
-                uri: "https://picjumbo.com/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnails_pic_jumbo-100x100.gif"
-            },
-            {
-                id: 9,
-                title: "Negative Space",
-                description: "Brilliant selection of completely free HD stock photography",
-                uri: "https://negativespace.co/",
-                imageUri: "http://makerbook.net/wp-content/uploads/makerbook_thumbnail_negative_space-100x100.gif"
-            },
+                title: "Fontspace",
+                description: "Browse through collection of thousands of fonts that have been shared by designers around the world.",
+                uri: "http://abstractfonts.com/",
+                imageUri: "http://makerbook.net/wp-content/uploads/2015/05/makerbook_thumbnail_fontspace3-100x100.png"
+            }
         ]
     }
 
@@ -77,9 +49,9 @@ class Fonts extends Component {
                 <a href={uri} target="_blank">
                     <div className="valign-wrapper">
                         <img src={imageUri} alt="" className="circle responsive-img"/>
-                        <h5>{title}</h5>
+                        <h3>{title}</h3>
                     </div>
-                    <p>{description}</p>
+                    <p className="lead">{description}</p>
                 </a>
             </li>
         ))

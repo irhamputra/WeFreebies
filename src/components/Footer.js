@@ -1,9 +1,9 @@
 import React from 'react';
-import Emoji from 'react-emoji-render';
+import { Emojione } from 'react-emoji-render';
 
 const Footer = () => (
     <div className="container text-center footer-wrapper">
-        <Emoji text="Made with <3 in Leipzig, Germany :rocket:" />
+        <Emojione text="Made with <3 in Leipzig, Germany 🇩🇪" />
     </div>
 );
 
