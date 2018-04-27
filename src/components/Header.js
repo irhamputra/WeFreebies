@@ -2,10 +2,16 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 const Header = () => (
-    <div>
-        <h1 className="animated bounceInDown"><Link to="/">WeFreebies</Link></h1>
-        <p className="animated bounceInUp">A hand-picked directory of the best free resources for creatives</p>
-        <hr/>
+    <div className="header-bg">
+        <div className="container header-wrapper">
+            <h1>
+                <Link to="/">
+                    <span className="h1-color">WeFreebies.co</span>
+                </Link>
+            </h1>
+            <p className="lead">A hand-picked directory of the best free resources for creatives</p>
+            <p className="spacing">By Irham Putra | 2018</p>
+        </div>
     </div>
 );
 

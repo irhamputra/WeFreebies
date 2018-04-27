@@ -56,7 +56,7 @@ class Graphics extends Component {
                 <a href={uri} target="_blank">
                     <div className="valign-wrapper">
                         <img src={imageUri} alt="" className="circle responsive-img"/>
-                        <h5>{title}</h5>
+                        <h3>{title}</h3>
                     </div>
                     <p>{description}</p>
                 </a>
@@ -66,13 +66,15 @@ class Graphics extends Component {
 
     render() {
         return (
-            <div className="row wrapper">
+            <div>
                 <Header/>
-                <h4>Graphics</h4>
-                <p>The best sites to get free stock Graphic</p>
-                <ul className="collection">
-                    {this.renderData()}
-                </ul>
+                <div className="container body-wrapper">
+                    <h4>Graphics</h4>
+                    <p>The best sites to get free stock Graphic</p>
+                    <ul className="collection">
+                        {this.renderData()}
+                    </ul>
+                </div>
                 <Footer/>
             </div>
         )

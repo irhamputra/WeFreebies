@@ -5,12 +5,12 @@ import Data from "../data/data";
 class CardsList extends Component{
     renderData = () => {
         return Data.map(({id, title, path, icon}) => (
-            <div className="animated fadeInUp col-md-4">
+            <div className="col-md-4">
                 <Link to={path}>
-                    <div className="card blue-grey darken-2">
+                    <div className="card black darken-4">
                         <div className="card-content white-text center-align">
                             <i class="small material-icons">{icon}</i>
-                            <span className="card-title">{title}</span>
+                            <h4 className="card-title">{title}</h4>
                         </div>
                     </div>
                 </Link>
@@ -20,7 +20,7 @@ class CardsList extends Component{
 
     render(){
         return(
-            <div className="row">
+            <div className="container card-wrapper">
                 {this.renderData()}
             </div>
         )
