@@ -20,12 +20,14 @@ h1 {
 }
 .card-wrapper{
     padding: 40px;
+    margin-top: -130px;
 }
 .body-wrapper{
     padding: 40px 50px 20px 50px;
+    margin-top: -150px;
 }
 .header-wrapper{
-    padding: 70px 55px;
+    padding: 70px 55px 150px 55px;
 }
 .footer-wrapper{
     padding: 0 55px 20px 55px;
@@ -47,4 +49,7 @@ li a {
 }
 li a:hover{
     color: #ffb700;
+}
+.collection{
+    border-radius: 7px;
 }

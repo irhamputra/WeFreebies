@@ -89,11 +89,13 @@ class Textures extends Component {
         return (
             <div className="row wrapper">
                 <Header/>
-                <h4>Textures</h4>
-                <p>The best sites to get free stock textures</p>
-                <ul className="collection">
-                    {this.renderData()}
-                </ul>
+                <div className="container body-wrapper">
+                    <h4>Textures</h4>
+                    <p>The best sites to get free stock textures</p>
+                    <ul className="collection">
+                        {this.renderData()}
+                    </ul>
+                </div>
                 <Footer/>
             </div>
         )

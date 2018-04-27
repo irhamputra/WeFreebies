@@ -89,11 +89,13 @@ class Audio extends Component {
         return (
             <div className="row">
                 <Header/>
-                <h4>Audio</h4>
-                <p>The best sites to get free stock Audio</p>
-                <ul className="collection">
-                    {this.renderData()}
-                </ul>
+                <div className="container body-wrapper">
+                    <h4>Audio</h4>
+                    <p>The best sites to get free stock Audio</p>
+                    <ul className="collection">
+                        {this.renderData()}
+                    </ul>
+                </div>
                 <Footer/>
             </div>
         )

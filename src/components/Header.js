@@ -1,4 +1,5 @@
 import React from "react";
+import Emoji from "react-emoji-render";
 import {Link} from "react-router-dom";
 
 const Header = () => (
@@ -6,10 +7,13 @@ const Header = () => (
         <div className="container header-wrapper">
             <h1>
                 <Link to="/">
-                    <span className="h1-color">WeFreebies.co</span>
+                    <span className="h1-color">WeFreebies</span>
                 </Link>
             </h1>
-            <p className="lead">A hand-picked directory of the best free resources for creatives</p>
+            <div className="lead">
+                <Emoji
+                    text="A hand picked directory of the best free resources for creative, because we love a free stuff <3"/>
+            </div>
             <p className="spacing">By Irham Putra | 2018</p>
         </div>
     </div>

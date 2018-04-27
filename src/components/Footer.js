@@ -1,8 +1,9 @@
 import React from 'react';
+import Emoji from 'react-emoji-render';
 
 const Footer = () => (
-    <div className="container footer-wrapper">
-        <p>Copyright © wefreebies.co, made with Love from Leipzig, Germany</p>
+    <div className="container text-center footer-wrapper">
+        <Emoji text="Made with <3 in Leipzig, Germany :rocket:" />
     </div>
 );
 

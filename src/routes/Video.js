@@ -89,11 +89,13 @@ class Video extends Component {
         return (
             <div className="row">
                 <Header/>
-                <h4>Video</h4>
-                <p>The best sites to get free stock video</p>
-                <ul className="collection">
-                    {this.renderData()}
-                </ul>
+                <div className="body-wrapper container">
+                    <h4>Video</h4>
+                    <p>The best sites to get free stock video</p>
+                    <ul className="collection">
+                        {this.renderData()}
+                    </ul>
+                </div>
                 <Footer/>
             </div>
         )

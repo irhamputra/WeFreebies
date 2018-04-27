@@ -89,11 +89,13 @@ class Fonts extends Component {
         return (
             <div className="row">
                 <Header/>
-                <h4>Fonts</h4>
-                <p>The best sites to get free stock fonts</p>
-                <ul className="collection">
-                    {this.renderData()}
-                </ul>
+                <div className="container body-wrapper">
+                    <h4>Fonts</h4>
+                    <p>The best sites to get free stock fonts</p>
+                    <ul className="collection">
+                        {this.renderData()}
+                    </ul>
+                </div>
                 <Footer/>
             </div>
         )

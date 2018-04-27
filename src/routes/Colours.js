@@ -89,11 +89,13 @@ class Colours extends Component {
         return (
             <div className="row">
                 <Header/>
-                <h4>Colour</h4>
-                <p>The best sites to get free stock colours</p>
-                <ul className="collection">
-                    {this.renderData()}
-                </ul>
+                <div className="container body-wrapper">
+                    <h4>Colour</h4>
+                    <p>The best sites to get free stock colours</p>
+                    <ul className="collection">
+                        {this.renderData()}
+                    </ul>
+                </div>
                 <Footer/>
             </div>
         )

@@ -89,11 +89,13 @@ class Tools extends Component {
         return (
             <div className="row">
                 <Header/>
-                <h4>Tools</h4>
-                <p>The best sites to get free stock tools</p>
-                <ul className="collection">
-                    {this.renderData()}
-                </ul>
+                <div className="body-wrapper container">
+                    <h4>Tools</h4>
+                    <p>The best sites to get free stock tools</p>
+                    <ul className="collection">
+                        {this.renderData()}
+                    </ul>
+                </div>
                 <Footer/>
             </div>
         )
